@@ -1,7 +1,14 @@
 language: objective-c
 osx_image: xcode8
 
+branches:
+  only:
+  - master
+
 xcode_project: SwiftVideoBackground.xcodeproj
 xcode_scheme: SwiftVideoBackground
 
 xcode_sdk: iphonesimulator10.0
+
+script:
+- xcodebuild clean build test -project SwiftVideoBackground.xcodeproj -scheme SwiftVideoBackground
