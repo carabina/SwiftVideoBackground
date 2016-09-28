@@ -11,4 +11,4 @@ xcode_scheme: SwiftVideoBackground
 xcode_sdk: iphonesimulator10.0
 
 script:
-- xcodebuild clean build test -project SwiftVideoBackground.xcodeproj -scheme SwiftVideoBackground
+- xcodebuild clean build test -project SwiftVideoBackground.xcodeproj -scheme SwiftVideoBackground -destination 'platform=iOS Simulator,name=iPhone 6,OS=latest'
